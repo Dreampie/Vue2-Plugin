@@ -1,0 +1,58 @@
+{
+  "name": "@dreampie/vue2-plugin",
+  "version": "0.0.1",
+  "title": "Vue2 Plugin",
+  "description": "A Vue2 Plugin",
+  "homepage": "https://github.com/Dreampie/Vue2-Plugin",
+  "author": "Dreampie <Dreampie@outlook.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "example": "webpack --progress --hide-modules --config  webpack.config.build.example.js && cross-env NODE_ENV=example webpack-dev-server --config  webpack.config.build.example.js --open --inline --hot --port 8888",
+    "build": "webpack --progress --hide-modules --config  webpack.config.build.js && webpack --progress --hide-modules --config  webpack.config.build.min.js",
+    "build-example": "webpack --progress --hide-modules --config  webpack.config.build.example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dreampie/Vue2-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dreampie/Vue2-Plugin/issues"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "vue-cookie": "^1.1.4",
+    "@dreampie/vue2-common": "^0.0.3"
+  },
+  "devDependencies": {
+    "vue": "^2.3.3",
+    "vue-router": "^2.5.3",
+    "vuex": "^2.3.1",
+    "jquery": "^3.2.1",
+    "@dreampie/semantic-ui": "^2.2.11",
+    "semantic-ui-calendar": "^0.0.8",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.26.0",
+    "json-loader": "^0.5.4",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "transform-runtime": "0.0.0",
+    "vue-loader": "^12.0.4",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

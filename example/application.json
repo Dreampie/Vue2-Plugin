@@ -1,0 +1,9 @@
+{
+  "port": 8888,
+  "title": "Vue Plugins",
+  "example": {
+    "rootUrl": "http://localhost:8888",
+    "apiRootUrl": "http://localhost:8888",
+    "loginUrl": "http://localhost:8888"
+  }
+}
