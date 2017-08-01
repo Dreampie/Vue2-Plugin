@@ -12,7 +12,7 @@ module.exports = {
         libraryTarget: "umd",
     },
     externals: {
-        'vue': 'Vue'
+        'vue': 'vue'
     },
     module: {
         rules: [
