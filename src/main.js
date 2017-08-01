@@ -1,12 +1,14 @@
 import Vue from "vue";
-import {VueBus, VueCookie, VueHttp} from "./plugin/index.js";
+import Vue2Plugin from "./plugin/index.js";
 import router from "./router.js";
 import App from "./App.vue";
 import properties from "./../application.json";
 
-Vue.use(VueCookie)
-Vue.use(VueBus)
-Vue.use(VueHttp)
+Vue.use(Vue2Plugin)
+
+console.log(Vue.cookie)
+console.log(Vue.bus)
+console.log(Vue.http.defaults)
 
 console.log("App start env is: " + process.env.NODE_ENV)
 console.log("App root url is: " + properties[process.env.NODE_ENV].rootUrl)

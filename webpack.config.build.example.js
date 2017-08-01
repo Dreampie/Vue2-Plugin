@@ -12,6 +12,7 @@ module.exports.entry = {
     'common': ['jquery', 'vue', 'vue-router', 'vuex', 'vue-cookie', 'axios', '@dreampie/semantic-ui'],
     'js/main': './src/main.js',
 }
+module.exports.externals = {}
 module.exports.output = {
     path: path.resolve(__dirname, './example'),
     filename: '[name].js'
