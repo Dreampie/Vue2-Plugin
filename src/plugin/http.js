@@ -1,3 +1,4 @@
+import Vue from "vue";
 import Axios from "axios";
 import {DomainSolver} from "@dreampie/vue2-common";
 
