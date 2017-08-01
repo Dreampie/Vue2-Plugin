@@ -13,7 +13,6 @@ window.localStorage.setItem("rootUrl", properties[process.env.NODE_ENV].rootUrl)
 window.localStorage.setItem("apiRootUrl", properties[process.env.NODE_ENV].apiRootUrl)
 window.localStorage.setItem("loginUrl", properties[process.env.NODE_ENV].loginUrl)
 
-
 Vue.use(Vue2Plugin)
 
 console.log(Vue.cookie)
