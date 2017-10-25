@@ -14,11 +14,12 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
+    Vue.bus.$emit('v-router:before')
     next()
 })
 
 router.afterEach((route) => {
-    Vue.bus.$emit('v-top-menu:reset')
+    Vue.bus.$emit('v-router:after')
 })
 
 export default router
